@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
 
-body{
+body {
     background: url(img/Background.webp);
     background-size: cover;
     background-repeat: no-repeat;
@@ -9,53 +9,94 @@ body{
     grid-template-columns: 25vw 25vw 25vw 25vw;
 }
 
-#headerGrid{
+h1,h2{
+    font-family: "Oleo script";
+    text-decoration: underline;
+}
+
+#headerGrid {
     display: grid;
     grid-template-rows: 25vh;
     grid-template-columns: 25vw 50vw 25vw;
 
 }
 
-.header{
-background-color: lightgray;
-border: solid black 2px;
-justify-content: center; 
+.div {
+    background-color: lightgray;
+    border: solid black 2px;
+    justify-content: center;
 }
 
-.filter{
+.filter {
     display: grid;
     grid-column: 1/2;
-    grid-row: 1/2;   
-    p{
+    grid-row: 1/2;
+    min-width: 60px;
+    width: 30%;
+    p {
         background-color: white;
         border: solid black 2px;
         margin: 5%;
     }
 }
 
-#rubrik{
+#rubrik {
+    display: flex;
     display: grid;
     grid-column: 2/3;
     grid-row: 1/2;
+    font-size: 30px;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
-    font-family: "Oleo script";
-    text-decoration: underline;
+}
+
+#centVarukorg{
+    grid-column: 3/4;
+    grid-row: 1/2;
     display: flex;
     justify-content: center;
 }
 
-.varukorg{
-    display: grid;
-    grid-column: 3/4;
-    grid-row: 1/2;
+.varukorg {
+    display: flex;
+    align-items: center;
+    min-width: 100px;
+    width: 50%;
+    min-height: 25px;
+    height: 40%;
+    margin-top: -3.5%;
 }
 
-#main{
+#main {
     display: grid;
     grid-template-rows: 65vh;
     grid-template-columns: 25vw 50vw 25vw;
     grid-column: 1/4;
     grid-row: 2/4;
+}
+
+.produkter {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.sidoBilder {
+    width: 70%;
+    border: solid black 2px;
+}
+
+.skate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.påven {
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+
+.jesus {
+    grid-row: 1/2;
+    grid-column: 1/2;
 }
