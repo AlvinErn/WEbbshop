@@ -86,6 +86,17 @@ h2 {
 .produkter {
     grid-row: 1/2;
     grid-column: 2/3;
+    border-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.produkt{
+    margin: 2%;
+}
+
+.brädor{
+    height: 50%;
 }
 
 .sidoBilder {
@@ -114,4 +125,11 @@ h2 {
     grid-column: 1/5;
     background-color: rgb(136, 136, 136);
     border-top: solid black 2px;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+#footerContent{
+    display: flex;
 }
